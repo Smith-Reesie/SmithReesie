@@ -1,3 +1,121 @@
-body {
-    background: orange;
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Stick+No+Bills:wght@600&display=swap');
+
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Grechen Fuemen', cursive;
+        font-family: 'Stick No Bills', sans-serif;
+    }
+    body{
+        background:linear-gradient(to bottom, #ca9263, #3c8bc0);
+
+    }
+header{
+    
+    background-image:url(../SmithReesie/images/Logo\ 2.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+
+}
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+    font-size: 20px;
+
+}
+ul li{
+    display: inline-flex;
+}
+ul li a{
+    color: rgb(226, 110, 15);
+    padding: 9px 20px;
+    background-color: rgba(29, 134, 56, 00);
+    border: flex double;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+    /*text-decoration: block;
+    color: gold;
+    padding: 5px 10px;
+    border: 5px double rgb(114, 158, 31);
+    border-radius: 50px;
+    transition: 0.6s ease;*/
+    
+}
+ul li a:hover{
+    background-color: orange;
+
+}
+.Logo img{
+    float: left;
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+    
+}
+
+.Logo img :hover{
+    box-shadow: rgba(219, 220, 231, 0.993),0 17px 50px 0 rgba(0,0,0,0.19);
+
+    
+}
+
+.navbar{
+    max-width: 1200px;
+    margin: auto;
+}
+
+button {
+    padding: 9px 20px;
+    background-color: rgba(145, 12, 12, 0);
+    border: flex;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+button.cta{
+    float: left;
+    list-style-type: none;
+    margin-top: 25px;
+    font-size: 20px;
+    left: 60%;
+
+}
+
+button:hover {
+    box-shadow: rgba(9, 14, 92, 0.993),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.title{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, +50%);
+    color:rgb(226, 110, 15);
+}
+.button1{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, +50%);
+    color:rgb(226, 110, 15);
+    padding: 9px 20px;
+    background-color: rgba(29, 134, 56, 00);
+    border: flex;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: rgb(226, 110, 15);
+}
+.btn{
+    border-radius: 50px;
+    padding: 9px 20px;
+    color: rgb(226, 110, 15);
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+   
 }
