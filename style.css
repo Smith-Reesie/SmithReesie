@@ -1,121 +1,152 @@
 @import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Stick+No+Bills:wght@600&display=swap');
 
-    *{
-        margin: 0;
-        padding: 0;
-        font-family: 'Grechen Fuemen', cursive;
-        font-family: 'Stick No Bills', sans-serif;
-    }
-    body{
-        background:linear-gradient(to bottom, #ca9263, #3c8bc0);
-
-    }
-header{
     
-    background-image:url(../SmithReesie/images/Logo\ 2.png);
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-
-}
-ul{
-    float: right;
-    list-style-type: none;
-    margin-top: 25px;
-    font-size: 20px;
-
-}
-ul li{
-    display: inline-flex;
-}
-ul li a{
-    color: rgb(226, 110, 15);
-    padding: 9px 20px;
-    background-color: rgba(29, 134, 56, 00);
-    border: flex double;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-
-    /*text-decoration: block;
-    color: gold;
-    padding: 5px 10px;
-    border: 5px double rgb(114, 158, 31);
-    border-radius: 50px;
-    transition: 0.6s ease;*/
-    
-}
-ul li a:hover{
-    background-color: orange;
-
-}
-.Logo img{
-    float: left;
-    width: 150px;
-    height: auto;
-    cursor: pointer;
-    
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Grechen Fuemen', cursive;
+    font-family: 'Stick No Bills', sans-serif;
 }
 
-.Logo img :hover{
-    box-shadow: rgba(219, 220, 231, 0.993),0 17px 50px 0 rgba(0,0,0,0.19);
-
-    
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* Navbar */
 .navbar{
-    max-width: 1200px;
-    margin: auto;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-color: rgb(255, 166, 0);
+    position: sticky;
+    top: 0;
 }
 
-button {
-    padding: 9px 20px;
-    background-color: rgba(145, 12, 12, 0);
-    border: flex;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
 }
-button.cta{
-    float: left;
-    list-style-type: none;
-    margin-top: 25px;
-    font-size: 20px;
-    left: 60%;
+.navbar ul li a{
+    text-decoration: none;
+    color: blue;
+    padding: 8px 25px;
+    transition: all .5s ease;
+}
+.navbar ul li a:hover{
+    background-color: whitesmoke;
+    color: black;
+    box-shadow: 0 0 10px rgb(128, 0, 0);
 
 }
-
-button:hover {
-    box-shadow: rgba(9, 14, 92, 0.993),0 17px 50px 0 rgba(0,0,0,0.19);
+#home{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.5);
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+    color:rgb(255, 166, 0)
 }
-
-.title{
+#home::before{
+    content: "";
     position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, +50%);
-    color:rgb(226, 110, 15);
+    top: 0;
+    right: 0;
+    background: url(images/Logo.png) no-repeat center center/cover;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+
 }
-.button1{
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, +50%);
-    color:rgb(226, 110, 15);
-    padding: 9px 20px;
-    background-color: rgba(29, 134, 56, 00);
-    border: flex;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-    color: rgb(226, 110, 15);
-}
-.btn{
-    border-radius: 50px;
-    padding: 9px 20px;
-    color: rgb(226, 110, 15);
+
+.main{
+    display: flex;
+    flex-direction: column;
     border: none;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    right: 80%;
+}
+.headings{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    margin: 40px 0px ;
+}
+#btn{
+    padding: 10px 35px;
+    background-color: orangered;
+    border: 1px soild rgb(255, 166, 0);
+    outline: none;
+    transform: .6 ease;
+    border-radius: 50%;
+
+}
+#btn :hover{
     cursor: pointer;
-    font-size: 20px;
-   
+    background-color: whitesmoke;
+    color: orange;
+    box-shadow: orangered;
+}
+
+/*About section*/
+
+#about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+    background: linear-gradient(to top,white, #ca91639f, #3c8bc0c5, black);
+}
+#pic{
+    display: flex;
+}
+
+#pic img{
+    width: 575px;
+    height: 400px;
+
+}
+
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+     
+}
+
+#intro h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Portfolio section*/
+
+#portfolio{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to top, blue, orange, white);
+    color: orangered;
+    align-items: center;
+    padding: 20px
+}
+
+.model{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+
+}
+.model img{
+    width: 360px;
+    height: 240px;
+    margin: 10px;
 }
