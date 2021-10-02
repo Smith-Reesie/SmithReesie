@@ -41,16 +41,24 @@
     box-shadow: 0 0 10px rgb(128, 0, 0);
 
 }
-#home{
+.home{/*
     display: flex;
     flex-direction: column;
     background-color: rgba(0,0,0,0.5);
     height: 840px;
     justify-content: center;
     align-items: center;
-    color:rgb(255, 166, 0)
+    color:rgb(255, 166, 0)*/
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: orange ;
+    height: 900px;
+    width: 100%;
+    opacity: 1;
 }
-#home::before{
+.homeb{
     content: "";
     position: absolute;
     top: 0;
@@ -58,8 +66,7 @@
     background: url(images/Logo.png) no-repeat center center/cover;
     height: 900px;
     width: 100%;
-    z-index: -1;
-    opacity: .8;
+    opacity: 1;
 
 }
 
@@ -102,6 +109,7 @@
     box-sizing: border-box;
     padding: 20px;
     margin-bottom: 50px;
+    margin-top: 837px;
     background: linear-gradient(to top,white, #ca91639f, #3c8bc0c5, black);
 }
 #pic{
