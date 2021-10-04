@@ -125,7 +125,7 @@
 #intro{
     display: flex;
     flex-direction: column;
-    text-align: justify;
+    text-align: center;
     padding: 10px;
      
 }
@@ -154,7 +154,19 @@
 
 }
 .model img{
-    width: 360px;
-    height: 240px;
-    margin: 10px;
+    width: 400px;
+    height: 500px;
+    margin: 20px;
+}
+.model img:hover{
+    cursor: pointer;
+    background-color: whitesmoke;
+    color: orange;
+    box-shadow: rgb(18, 66, 223);
+
+}
+p{
+ font-size: 30px;
+ background-color: rgba(255, 68, 0, 0.404);
+ box-sizing: inherit;
 }
